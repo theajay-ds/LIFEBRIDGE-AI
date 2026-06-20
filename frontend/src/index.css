@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg-primary: #0a0d14;
+  --bg-secondary: #111622;
+  --bg-tertiary: #171e2e;
+  --bg-card: #121826;
+  --border-color: #1e2638;
+  --border-glow: #2b3752;
+  
+  --text-primary: #f3f4f6;
+  --text-secondary: #9ca3af;
+  --text-muted: #6b7280;
+
+  --accent-purple: #a855f7;
+  --accent-purple-glow: rgba(168, 85, 247, 0.15);
+  
+  --color-danger: #ef4444;
+  --color-danger-glow: rgba(239, 68, 68, 0.2);
+  
+  --color-warning: #f59e0b;
+  --color-warning-glow: rgba(245, 158, 11, 0.2);
+  
+  --color-success: #10b981;
+  --color-success-glow: rgba(16, 185, 129, 0.2);
+  
+  --color-info: #3b82f6;
+  --color-info-glow: rgba(59, 130, 246, 0.2);
+
+  font-family: 'Outfit', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: dark;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-purple);
+}
+
+/* Animations */
+@keyframes pulse-red {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px rgba(239, 68, 68, 0);
+  }
+}
+
+@keyframes pulse-dot {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+.pulse-sos {
+  animation: pulse-red 2s infinite ease-in-out;
+}
+
+.pulse-online {
+  animation: pulse-dot 1.5s infinite ease-in-out;
+}
+
+.float-card {
+  animation: float 4s infinite ease-in-out;
+}
+
+/* Markdown styling inside chat */
+.chat-md-response p {
+  margin: 0 0 10px 0;
+}
+
+.chat-md-response p:last-child {
+  margin-bottom: 0;
+}
+
+.chat-md-response ul, .chat-md-response ol {
+  margin: 5px 0 10px 20px;
+  padding: 0;
+}
+
+.chat-md-response li {
+  margin-bottom: 4px;
+}
+
+.chat-md-response h1, .chat-md-response h2, .chat-md-response h3 {
+  margin: 15px 0 8px 0;
+  font-family: 'Space Grotesk', sans-serif;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.chat-md-response h3 {
+  font-size: 1.1rem;
+}
+
+.chat-md-response blockquote {
+  border-left: 3px solid var(--accent-purple);
+  background: var(--bg-tertiary);
+  margin: 10px 0;
+  padding: 8px 12px;
+  border-radius: 4px;
+}

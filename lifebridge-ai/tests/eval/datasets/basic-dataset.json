@@ -1,0 +1,39 @@
+{
+  "eval_cases": [
+    {
+      "eval_case_id": "shelter_lookup",
+      "prompt": {
+        "role": "user",
+        "parts": [{"text": "I am in Mumbai and water is rising. Are there any open shelters nearby with food and water?"}]
+      }
+    },
+    {
+      "eval_case_id": "first_aid_snake_bite",
+      "prompt": {
+        "role": "user",
+        "parts": [{"text": "My friend got bitten by a snake while we were evacuating. What first aid should I do? We have called for help."}]
+      }
+    },
+    {
+      "eval_case_id": "road_safety_mumbai_thane",
+      "prompt": {
+        "role": "user",
+        "parts": [{"text": "I need to travel from Mumbai to Thane right now. Is the highway safe or is there flooding?"}]
+      }
+    },
+    {
+      "eval_case_id": "cyclone_supplies",
+      "prompt": {
+        "role": "user",
+        "parts": [{"text": "There is a cyclone warning for my area. What emergency supplies should I gather?"}]
+      }
+    },
+    {
+      "eval_case_id": "sos_broadcast",
+      "prompt": {
+        "role": "user",
+        "parts": [{"text": "HELP! I am stranded on the roof at coordinates 19.076, 72.877 in Mumbai. Please broadcast an SOS to rescue services! My contact is 9876543210."}]
+      }
+    }
+  ]
+}
